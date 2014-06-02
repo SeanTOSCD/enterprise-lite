@@ -1,0 +1,32 @@
+/*
+Theme Name: Enterprise
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+.main-navigation {
+	position: static;
+	display: inline-block;
+}
+.post-author {
+	float: left;
+}
+.single .posted-on {
+	left: 0;
+}
+.single .posted-on .fa,
+.entry-meta-feed .posted-on .fa,
+.cat-links .fa,
+.tag-links .fa {
+	margin-right: 0;
+	margin-left: 3px;
+}
+.nav-links .fa,
+.more-link .fa {
+	display: none;
+}
+.nav-previous {
+	text-align: left;
+}
