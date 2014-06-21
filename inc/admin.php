@@ -9,7 +9,7 @@ define( 'ENTERPRISE_FULL_NAME', 'Enterprise' );
 ***********************************************/
 
 function enterprise_license_menu() {
-	add_theme_page( ENTERPRISE_NAME, ENTERPRISE_NAME, 'manage_options', 'enterprise-lite', 'enterprise_admin' );
+	add_theme_page( ENTERPRISE_NAME, ENTERPRISE_NAME, 'edit_theme_options', 'enterprise-lite', 'enterprise_admin' );
 }
 add_action('admin_menu', 'enterprise_license_menu');
 
