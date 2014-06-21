@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Enterprise Lite\n"
-"POT-Creation-Date: 2014-06-02 03:39-0600\n"
-"PO-Revision-Date: 2014-06-02 03:40-0600\n"
+"POT-Creation-Date: 2014-06-21 15:56-0600\n"
+"PO-Revision-Date: 2014-06-21 15:57-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -139,15 +139,15 @@ msgstr ""
 msgid "Website URL"
 msgstr ""
 
-#: functions.php:57
+#: functions.php:58
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:75
+#: functions.php:76
 msgid "Main Sidebar"
 msgstr ""
 
-#: functions.php:132 inc/customizer.php:215 templates/content.php:40
+#: functions.php:133 inc/customizer.php:215 templates/content.php:40
 msgid "Continue reading"
 msgstr ""
 
@@ -384,6 +384,10 @@ msgstr ""
 
 #: searchform.php:8
 msgid "Search for:"
+msgstr ""
+
+#: searchform.php:10
+msgid "Search"
 msgstr ""
 
 #: sidebar.php:23
