@@ -11,13 +11,6 @@ define( 'ENTERPRISE_AUTHOR_URI', 'http://seandavis.co/' );
 define( 'ENTERPRISE_VERSION', '1.0.0' );
 define( 'ENTERPRISE_IMG', get_template_directory_uri() . '/assets/images/' );
 
-/**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 624; /* pixels */
-}
-
 if ( ! function_exists( 'enterprise_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -27,6 +20,14 @@ if ( ! function_exists( 'enterprise_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function enterprise_setup() {
+	global $content_width;
+
+	/**
+	 * Set the content width based on the theme's design and stylesheet.
+	 */
+	if ( ! isset( $content_width ) ) {
+		$content_width = 624; /* pixels */
+	}
 
 	/*
 	 * Make theme available for translation.
