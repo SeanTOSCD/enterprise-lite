@@ -8,7 +8,7 @@
 define( 'ENTERPRISE_NAME', 'Enterprise Lite' );
 define( 'ENTERPRISE_AUTHOR', 'Sean Davis' );
 define( 'ENTERPRISE_AUTHOR_URI', 'http://seandavis.co/' );
-define( 'ENTERPRISE_VERSION', '1.0.0' );
+define( 'ENTERPRISE_VERSION', '1.0.1' );
 define( 'ENTERPRISE_IMG', get_template_directory_uri() . '/assets/images/' );
 
 if ( ! function_exists( 'enterprise_setup' ) ) :
