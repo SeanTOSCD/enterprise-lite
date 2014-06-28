@@ -84,5 +84,13 @@ Copyright: Dave Gandy, http://fontawesome.io
 
 == Changelog ==
 
+= 1.0.2 =
+* updated theme URI
+
+= 1.0.1 =
+* moved $content_width into theme setup function
+* changed theme admin page capabilities
+* added missing translation function
+
 = 1.0.0 =
 * first stable version
