@@ -49,7 +49,7 @@ function enterprise_setup() {
 	/**
 	 * Enable support for Post Thumbnails on posts and pages.
 	 */
-	add_theme_support( 'post-thumbnails' );	
+	add_theme_support( 'post-thumbnails' );
 	// add a hard cropped (for uniformity) image size for the product grid
 	add_image_size( 'enterprise_featured_image', 738, 200, true );
 
@@ -62,6 +62,9 @@ function enterprise_setup() {
 	add_theme_support( 'html5',
 		array( 'comment-list', 'search-form', 'comment-form', 'gallery', 'caption' )
 	);
+
+	// Add support for title tag
+	add_theme_support( 'title-tag' );
 }
 endif; // enterprise_setup
 add_action( 'after_setup_theme', 'enterprise_setup' );
@@ -141,7 +144,7 @@ add_filter( 'excerpt_more', 'enterprise_excerpt_more' );
 function enterprise_search_filter( $query ) {
 	if ( $query->is_search && ! is_admin() && ( class_exists( 'bbPress' ) && ! is_bbpress() ) )
 		$query->set( 'post_type', 'post' );
-		
+
 	return $query;
 }
 add_filter( 'pre_get_posts','enterprise_search_filter' );
@@ -152,15 +155,15 @@ add_filter( 'pre_get_posts','enterprise_search_filter' );
  */
 function enterprise_remove_more_tag_link_jump( $link ) {
     $offset = strpos( $link, '#more-' );
-    
+
     if ( $offset ) :
         $end = strpos( $link, '"', $offset );
     endif;
-    
+
     if ( $end ) :
         $link = substr_replace( $link, '', $offset, $end-$offset );
     endif;
-    
+
     return $link;
-} 
+}
 add_filter( 'the_content_more_link', 'enterprise_remove_more_tag_link_jump' );
