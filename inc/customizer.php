@@ -48,7 +48,7 @@ function enterprise_customize_register( $wp_customize ) {
 		public $description = '';
 		public $statuses;
 		public function __construct( $manager, $id, $args = array() ) {
-			$this->statuses = array( '' => __( 'Default', 'enterprise' ) );
+			$this->statuses = array( '' => __( 'Default', 'enterprise-lite' ) );
 			parent::__construct( $manager, $id, $args );
 		}
 		public function enqueue() {
@@ -73,7 +73,7 @@ function enterprise_customize_register( $wp_customize ) {
 				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 				<div class="control-description"><?php echo esc_html( $this->description ); ?></div>
 				<div class="customize-control-content">
-					<input class="color-picker-hex" type="text" maxlength="7" placeholder="<?php esc_attr_e( 'Hex Value', 'enterprise' ); ?>"<?php echo $default_attr; ?> />
+					<input class="color-picker-hex" type="text" maxlength="7" placeholder="<?php esc_attr_e( 'Hex Value', 'enterprise-lite' ); ?>"<?php echo $default_attr; ?> />
 				</div>
 			</label>
 			<?php
@@ -84,7 +84,7 @@ function enterprise_customize_register( $wp_customize ) {
 	 * Site Title (Logo) & Tagline
 	 */
 	// section adjustments
-	$wp_customize->get_section( 'title_tagline' )->title = __( 'Site Title (Logo) & Tagline', 'enterprise' );
+	$wp_customize->get_section( 'title_tagline' )->title = __( 'Site Title (Logo) & Tagline', 'enterprise-lite' );
 	$wp_customize->get_section( 'title_tagline' )->priority = 10;
 
 	// site title
@@ -97,7 +97,7 @@ function enterprise_customize_register( $wp_customize ) {
 		'sanitize_callback'	=> 'esc_url_raw'
 	) );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'enterprise_logo', array(
-		'label'		=> __( 'Custom Site Logo (replaces title)', 'enterprise' ),
+		'label'		=> __( 'Custom Site Logo (replaces title)', 'enterprise-lite' ),
 		'section'	=> 'title_tagline',
 		'settings'	=> 'enterprise_logo',
 		'priority'	=> 20
@@ -113,7 +113,7 @@ function enterprise_customize_register( $wp_customize ) {
 		'sanitize_callback'	=> 'enterprise_sanitize_checkbox'
 	) );
 	$wp_customize->add_control( 'enterprise_hide_tagline', array(
-		'label'		=> __( 'Hide Tagline', 'enterprise' ),
+		'label'		=> __( 'Hide Tagline', 'enterprise-lite' ),
 		'section'	=> 'title_tagline',
 		'priority'	=> 40,
 		'type'      => 'checkbox',
@@ -124,8 +124,8 @@ function enterprise_customize_register( $wp_customize ) {
 	 * Design Options
 	 */
 	$wp_customize->add_section( 'enterprise_layout_design', array(
-    	'title'       	=> __( 'Design Options', 'enterprise' ),
-		'description' 	=> __( 'Control the primary design color and other elements of your site.', 'enterprise' ),
+    	'title'       	=> __( 'Design Options', 'enterprise-lite' ),
+		'description' 	=> __( 'Control the primary design color and other elements of your site.', 'enterprise-lite' ),
 		'priority'   	=> 20,
 	) );
 
@@ -134,12 +134,13 @@ function enterprise_customize_register( $wp_customize ) {
 		'default'		=> '#2E9FEB',
 		'type'			=> 'option',
 		'capability'	=> 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 	$wp_customize->add_control( new Enterprise_WP_Customize_Color_Control( $wp_customize, 'enterprise_design_color', array(
-		'label'		=> __( 'Primary Design Color', 'enterprise' ),
+		'label'		=> __( 'Primary Design Color', 'enterprise-lite' ),
 		'section'	=> 'enterprise_layout_design',
 		'priority'	=> 20,
-		'description' 	=> __( 'The primary design color is used for links, borders, buttons, and other design elements.', 'enterprise' ),
+		'description' 	=> __( 'The primary design color is used for links, borders, buttons, and other design elements.', 'enterprise-lite' ),
 	) ) );
 
 	// design color	text
@@ -147,12 +148,13 @@ function enterprise_customize_register( $wp_customize ) {
 		'default'		=> '#ffffff',
 		'type'			=> 'option',
 		'capability'	=> 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 	$wp_customize->add_control( new Enterprise_WP_Customize_Color_Control( $wp_customize, 'enterprise_design_color_text', array(
-		'label'		=> __( 'Text Color for Designed Elements', 'enterprise' ),
+		'label'		=> __( 'Text Color for Designed Elements', 'enterprise-lite' ),
 		'section'	=> 'enterprise_layout_design',
 		'priority'	=> 30,
-		'description' 	=> __( 'When the above Primary Design Color is used as a background color, this color option is applied to the text within that element.', 'enterprise' ),
+		'description' 	=> __( 'When the above Primary Design Color is used as a background color, this color option is applied to the text within that element.', 'enterprise-lite' ),
 	) ) );
 
 	/**
@@ -163,7 +165,7 @@ function enterprise_customize_register( $wp_customize ) {
 		// move Colors option to Enterprise custom section
 		$wp_customize->get_control( 'background_color' )->section = 'enterprise_layout_design';
 		// change the Colors label
-		$wp_customize->get_control( 'background_color' )->label = __( 'Full Site Background Color', 'enterprise' );
+		$wp_customize->get_control( 'background_color' )->label = __( 'Full Site Background Color', 'enterprise-lite' );
 		// put Colors option in a logical spot
 		$wp_customize->get_control( 'background_color' )->priority = 40;
 
@@ -175,7 +177,7 @@ function enterprise_customize_register( $wp_customize ) {
 		// move Background Image uploader to Enterprise custom section
 		$wp_customize->get_control( 'background_image' )->section = 'enterprise_layout_design';
 		// change the Background Image label
-		$wp_customize->get_control( 'background_image' )->label = __( 'Full Site Background Image', 'enterprise' );
+		$wp_customize->get_control( 'background_image' )->label = __( 'Full Site Background Image', 'enterprise-lite' );
 		// put Background Image uploader in a logical spot
 		$wp_customize->get_control( 'background_image' )->priority = 50;
 
@@ -185,7 +187,7 @@ function enterprise_customize_register( $wp_customize ) {
 		'sanitize_callback'	=> 'enterprise_sanitize_checkbox'
 	) );
 	$wp_customize->add_control( 'enterprise_page_box_shadow', array(
-		'label'		=> __( 'Remove Page Box Shadow', 'enterprise' ),
+		'label'		=> __( 'Remove Page Box Shadow', 'enterprise-lite' ),
 		'section'	=> 'enterprise_layout_design',
 		'priority'	=> 70,
 		'type'      => 'checkbox',
@@ -196,8 +198,8 @@ function enterprise_customize_register( $wp_customize ) {
 	 * Content Options
 	 */
 	$wp_customize->add_section( 'enterprise_content_section', array(
-    	'title'       	=> __( 'Content Options', 'enterprise' ),
-		'description' 	=> __( 'Adjust the display of content on your website. All options have a default value that can be left as-is but you are free to customize.', 'enterprise' ),
+    	'title'       	=> __( 'Content Options', 'enterprise-lite' ),
+		'description' 	=> __( 'Adjust the display of content on your website. All options have a default value that can be left as-is but you are free to customize.', 'enterprise-lite' ),
 		'priority'   	=> 40,
 	) );
 
@@ -207,7 +209,7 @@ function enterprise_customize_register( $wp_customize ) {
 		'sanitize_callback'	=> 'enterprise_sanitize_checkbox'
 	) );
 	$wp_customize->add_control( 'enterprise_post_content', array(
-		'label'		=> __( 'Display Post Excerpts', 'enterprise' ),
+		'label'		=> __( 'Display Post Excerpts', 'enterprise-lite' ),
 		'section'	=> 'enterprise_content_section',
 		'priority'	=> 10,
 		'type'      => 'checkbox',
@@ -215,11 +217,11 @@ function enterprise_customize_register( $wp_customize ) {
 
 	// read more link
 	$wp_customize->add_setting( 'enterprise_read_more', array(
-		'default'			=> __( 'Continue reading', 'enterprise' ),
+		'default'			=> __( 'Continue reading', 'enterprise-lite' ),
 		'sanitize_callback'	=> 'enterprise_sanitize_text'
 	) );
 	$wp_customize->add_control( 'enterprise_read_more', array(
-	    'label' 	=> __( 'Excerpt & More Link Text', 'enterprise' ),
+	    'label' 	=> __( 'Excerpt & More Link Text', 'enterprise-lite' ),
 	    'section' 	=> 'enterprise_content_section',
 		'priority'	=> 20,
 	) );
@@ -230,10 +232,10 @@ function enterprise_customize_register( $wp_customize ) {
 		'sanitize_callback'	=> 'enterprise_sanitize_textarea',
 	) );
 	$wp_customize->add_control( new Enterprise_WP_Customize_Textarea_Control( $wp_customize, 'enterprise_credits_copyright', array(
-		'label'			=> __( 'Footer Credits & Copyright', 'enterprise' ),
+		'label'			=> __( 'Footer Credits & Copyright', 'enterprise-lite' ),
 		'section'		=> 'enterprise_content_section',
 		'priority'		=> 60,
-		'description'	=> __( 'Displays tagline, site title, copyright, and year by default. Allowed tags: <img>, <a>, <div>, <span>, <blockquote>, <p>, <em>, <strong>, <form>, <input>, <br>, <s>, <i>, <b>', 'enterprise' ),
+		'description'	=> __( 'Displays tagline, site title, copyright, and year by default. Allowed tags: <img>, <a>, <div>, <span>, <blockquote>, <p>, <em>, <strong>, <form>, <input>, <br>, <s>, <i>, <b>', 'enterprise-lite' ),
 	) ) );
 }
 add_action( 'customize_register', 'enterprise_customize_register' );
