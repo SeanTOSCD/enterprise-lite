@@ -73,7 +73,7 @@ function enterprise_customize_register( $wp_customize ) {
 				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 				<div class="control-description"><?php echo esc_html( $this->description ); ?></div>
 				<div class="customize-control-content">
-					<input class="color-picker-hex" type="text" maxlength="7" placeholder="<?php esc_attr_e( 'Hex Value' ); ?>"<?php echo $default_attr; ?> />
+					<input class="color-picker-hex" type="text" maxlength="7" placeholder="<?php esc_attr_e( 'Hex Value', 'enterprise' ); ?>"<?php echo $default_attr; ?> />
 				</div>
 			</label>
 			<?php
