@@ -1,0 +1,425 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Enterprise Lite\n"
+"POT-Creation-Date: 2016-06-26 16:10-0800\n"
+"PO-Revision-Date: 2016-06-26 16:10-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:28
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:45
+msgid "Try looking in the monthly archives."
+msgstr ""
+
+#: archive.php:27
+#, php-format
+msgid "Author Archive: %s"
+msgstr ""
+
+#: archive.php:30
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:33
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:36
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:39 sidebar.php:12
+msgid "Archives"
+msgstr ""
+
+#: comments.php:25
+#, php-format
+msgctxt "comments title"
+msgid "One response... "
+msgid_plural "%1$s responses... "
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:30
+msgid "add one"
+msgstr ""
+
+#: comments.php:36 comments.php:53
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:37 comments.php:54
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:38 comments.php:55
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:65
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:75
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:76
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:77
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:78
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:80
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:81
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:85
+msgid "Name (required)"
+msgstr ""
+
+#: comments.php:87
+msgid "Email (required)"
+msgstr ""
+
+#: comments.php:89
+msgid "Website URL"
+msgstr ""
+
+#: functions.php:58
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:79
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:136 inc/customizer.php:220 templates/content.php:40
+msgid "Continue reading"
+msgstr ""
+
+#: header.php:22
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:45
+msgid "Menu"
+msgstr ""
+
+#: inc/admin.php:33
+#, php-format
+msgid "Upgrade to the Full-Featured Version of %1$s!"
+msgstr ""
+
+#: inc/admin.php:35
+#, php-format
+msgid ""
+"You are currently using the <strong>FREE</strong> version of %1$s. Upgrade "
+"to the full-featured version of %1$s for more customization options, "
+"additional features such as a built-in Feature Box and Post Footer, a "
+"Landing Page template and more!"
+msgstr ""
+
+#: inc/admin.php:38
+#, php-format
+msgid "View the Full Version of %1$s"
+msgstr ""
+
+#: inc/admin.php:39
+#, php-format
+msgid ""
+" users get 20% off by using Coupon Code: <strong>LITE20</strong> at checkout."
+msgstr ""
+
+#: inc/admin.php:52
+#, php-format
+msgid "How to Create a Child Theme for %1$s"
+msgstr ""
+
+#: inc/admin.php:54
+msgid ""
+"Through FTP, navigate to <code>your_website/wp-content/themes/</code> and in "
+"that directory, create a new folder as the name of your child theme. "
+"Something like <code>enterprise-lite-child</code> is perfectly fine."
+msgstr ""
+
+#: inc/admin.php:55
+msgid ""
+"Inside of your new folder, create a file called <code>style.css</code> (the "
+"name is NOT optional)."
+msgstr ""
+
+#: inc/admin.php:56
+msgid "Inside of your new <code>style.css</code> file, add the following CSS:"
+msgstr ""
+
+#: inc/admin.php:74
+msgid ""
+"You may edit all of what you pasted EXCEPT for the <code>Template</code> "
+"line as well as the <code>@import</code> line. Leave those two lines alone "
+"or the child theme will not work properly."
+msgstr ""
+
+#: inc/admin.php:75
+msgid ""
+"With your new child theme folder in place and the above CSS pasted inside of "
+"your <code>style.css</code> file, go back to your WordPress dashboard and "
+"navigate to \"Appearance -> Themes\" and locate your new theme (you'll see "
+"the name you chose). Activate your theme."
+msgstr ""
+
+#: inc/admin.php:76
+msgid ""
+"With your child theme activated, you can edit its stylesheet all you like. "
+"You may also create a <code>functions.php</code> file in the root of your "
+"child theme to add custom PHP."
+msgstr ""
+
+#: inc/admin.php:77
+msgid "Enjoy!"
+msgstr ""
+
+#: inc/customizer.php:51
+msgid "Default"
+msgstr ""
+
+#: inc/customizer.php:76
+msgid "Hex Value"
+msgstr ""
+
+#: inc/customizer.php:87
+msgid "Site Title (Logo) & Tagline"
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "Custom Site Logo (replaces title)"
+msgstr ""
+
+#: inc/customizer.php:116
+msgid "Hide Tagline"
+msgstr ""
+
+#: inc/customizer.php:127
+msgid "Design Options"
+msgstr ""
+
+#: inc/customizer.php:128
+msgid "Control the primary design color and other elements of your site."
+msgstr ""
+
+#: inc/customizer.php:140
+msgid "Primary Design Color"
+msgstr ""
+
+#: inc/customizer.php:143
+msgid ""
+"The primary design color is used for links, borders, buttons, and other "
+"design elements."
+msgstr ""
+
+#: inc/customizer.php:154
+msgid "Text Color for Designed Elements"
+msgstr ""
+
+#: inc/customizer.php:157
+msgid ""
+"When the above Primary Design Color is used as a background color, this "
+"color option is applied to the text within that element."
+msgstr ""
+
+#: inc/customizer.php:168
+msgid "Full Site Background Color"
+msgstr ""
+
+#: inc/customizer.php:180
+msgid "Full Site Background Image"
+msgstr ""
+
+#: inc/customizer.php:190
+msgid "Remove Page Box Shadow"
+msgstr ""
+
+#: inc/customizer.php:201
+msgid "Content Options"
+msgstr ""
+
+#: inc/customizer.php:202
+msgid ""
+"Adjust the display of content on your website. All options have a default "
+"value that can be left as-is but you are free to customize."
+msgstr ""
+
+#: inc/customizer.php:212
+msgid "Display Post Excerpts"
+msgstr ""
+
+#: inc/customizer.php:224
+msgid "Excerpt & More Link Text"
+msgstr ""
+
+#: inc/customizer.php:235
+msgid "Footer Credits & Copyright"
+msgstr ""
+
+#: inc/customizer.php:238
+msgid ""
+"Displays tagline, site title, copyright, and year by default. Allowed tags: "
+"<img>, <a>, <div>, <span>, <blockquote>, <p>, <em>, <strong>, <form>, "
+"<input>, <br>, <s>, <i>, <b>"
+msgstr ""
+
+#: inc/template-tags.php:20
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:24
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:28
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "%title"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title"
+msgstr ""
+
+#: inc/template-tags.php:101
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: inc/template-tags.php:130
+msgid "Pingback: "
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: inc/template-tags.php:132 inc/template-tags.php:160
+msgid " (Edit) "
+msgstr ""
+
+#: inc/template-tags.php:150
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:155
+msgid "by "
+msgstr ""
+
+#: inc/template-tags.php:171
+msgid "Reply"
+msgstr ""
+
+#: search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:8
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:10
+msgid "Search"
+msgstr ""
+
+#: sidebar.php:23
+msgid "Meta"
+msgstr ""
+
+#: templates/content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: templates/content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: templates/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: templates/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: templates/content-page.php:20 templates/content-single.php:30
+#: templates/content.php:43
+msgid "Pages:"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: templates/content-single.php:40 templates/content-single.php:43
+#: templates/content.php:54 templates/content.php:64
+msgid ", "
+msgstr ""
