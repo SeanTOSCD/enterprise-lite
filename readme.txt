@@ -33,13 +33,13 @@ Certainly! Here's exactly what you need to do.
 
 3. Inside of your new `style.css` file, add the following CSS:
 
-. . . . . . . . . . copy what's below . . . . . . . . . . . . 
+. . . . . . . . . . copy what's below . . . . . . . . . . . .
 
 
 	/*
 		Theme Name: your_child_theme_name
 		Author: your_name
-		Author URI: 
+		Author URI:
 		Description: Child theme for Enterprise Lite
 		Template: enterprise-lite
 	*/
@@ -51,7 +51,7 @@ Certainly! Here's exactly what you need to do.
 	--------------------------------------------------------------*/
 
 
-. . . . . . . . . . copy what's above . . . . . . . . . . . . 
+. . . . . . . . . . copy what's above . . . . . . . . . . . .
 
 4. You may edit all of what you pasted EXCEPT for the `Template` line as well as the `@import` line. Leave those two lines alone or the child theme will not work properly.
 
@@ -75,14 +75,20 @@ Enterprise Lite is based on Underscores http://underscores.me/, (C) 2012-2014 Au
 
 Font Awesome http://fortawesome.github.io/Font-Awesome/license/
 Font Awesome Licenses:
-	SIL Open Font License http://scripts.sil.org/OFL 
-	MIT License http://opensource.org/licenses/mit-license.html 
+	SIL Open Font License http://scripts.sil.org/OFL
+	MIT License http://opensource.org/licenses/mit-license.html
 	CC BY 3.0 License – http://creativecommons.org/licenses/by/3.0/
 Copyright: Dave Gandy, http://fontawesome.io
 
 
 
 == Changelog ==
+
+= 1.0.3 =
+* added theme support for title-tag
+* added sanitization for file uploaders in customizer
+* removed outdated theme tags
+* fixed missing textdomain
 
 = 1.0.2 =
 * updated theme URI

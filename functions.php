@@ -8,7 +8,7 @@
 define( 'ENTERPRISE_NAME', 'Enterprise Lite' );
 define( 'ENTERPRISE_AUTHOR', 'Sean Davis' );
 define( 'ENTERPRISE_AUTHOR_URI', 'http://seandavis.co/' );
-define( 'ENTERPRISE_VERSION', '1.0.1' );
+define( 'ENTERPRISE_VERSION', '1.0.3' );
 define( 'ENTERPRISE_IMG', get_template_directory_uri() . '/assets/images/' );
 
 if ( ! function_exists( 'enterprise_setup' ) ) :
@@ -33,9 +33,9 @@ function enterprise_setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on Enterprise, use a find and replace
-	 * to change 'enterprise' to the name of your theme in all the template files
+	 * to change 'enterprise-lite' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'enterprise', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'enterprise-lite', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -55,7 +55,7 @@ function enterprise_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'header' => __( 'Header Menu', 'enterprise' ),
+		'header' => __( 'Header Menu', 'enterprise-lite' ),
 	) );
 
 	// Enable support for HTML5 markup.
@@ -76,7 +76,7 @@ add_action( 'after_setup_theme', 'enterprise_setup' );
  */
 function enterprise_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Main Sidebar', 'enterprise' ),
+		'name'          => __( 'Main Sidebar', 'enterprise-lite' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -133,7 +133,7 @@ require get_template_directory() . '/inc/admin.php';
  * Replace excerpt ellipses with new ellipses and link to full article
  */
 function enterprise_excerpt_more( $more ) {
-	return '...</p> <p class="continue-reading"><a class="more-link" href="' . get_permalink( get_the_ID() ) . '">' . get_theme_mod( 'enterprise_read_more', __( 'Continue reading', 'enterprise' ) ) . '<i class="fa fa-caret-right"></i></a></p>';
+	return '...</p> <p class="continue-reading"><a class="more-link" href="' . get_permalink( get_the_ID() ) . '">' . get_theme_mod( 'enterprise_read_more', __( 'Continue reading', 'enterprise-lite' ) ) . '<i class="fa fa-caret-right"></i></a></p>';
 }
 add_filter( 'excerpt_more', 'enterprise_excerpt_more' );
 

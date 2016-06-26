@@ -37,10 +37,10 @@
 				<?php
 			endif;
 			// output the content
-			the_content( get_theme_mod( 'enterprise_read_more', __( 'Continue reading', 'enterprise' ) ) . '<i class="fa fa-caret-right"></i>' );
+			the_content( get_theme_mod( 'enterprise_read_more', __( 'Continue reading', 'enterprise-lite' ) ) . '<i class="fa fa-caret-right"></i>' );
 			// break into pages
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'enterprise' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'enterprise-lite' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -51,7 +51,7 @@
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'enterprise' ) );
+				$categories_list = get_the_category_list( __( ', ', 'enterprise-lite' ) );
 				if ( $categories_list && enterprise_categorized_blog() ) :
 			?>
 			<span class="cat-links">
@@ -61,7 +61,7 @@
 
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'enterprise' ) );
+				$tags_list = get_the_tag_list( '', __( ', ', 'enterprise-lite' ) );
 				if ( $tags_list ) :
 			?>
 			<span class="tag-links">

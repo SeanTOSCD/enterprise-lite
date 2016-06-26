@@ -24,19 +24,19 @@ get_header(); ?>
 							single_tag_title();
 
 						elseif ( is_author() ) :
-							printf( __( 'Author Archive: %s', 'enterprise' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							printf( __( 'Author Archive: %s', 'enterprise-lite' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
 						elseif ( is_day() ) :
-							printf( __( 'Day: %s', 'enterprise' ), '<span class="archive-element">' . get_the_date() . '</span>' );
+							printf( __( 'Day: %s', 'enterprise-lite' ), '<span class="archive-element">' . get_the_date() . '</span>' );
 
 						elseif ( is_month() ) :
-							printf( __( 'Month: %s', 'enterprise' ), '<span class="archive-element">' . get_the_date( _x( 'F Y', 'monthly archives date format', 'enterprise' ) ) . '</span>' );
+							printf( __( 'Month: %s', 'enterprise-lite' ), '<span class="archive-element">' . get_the_date( _x( 'F Y', 'monthly archives date format', 'enterprise-lite' ) ) . '</span>' );
 
 						elseif ( is_year() ) :
-							printf( __( 'Year: %s', 'enterprise' ), '<span class="archive-element">' . get_the_date( _x( 'Y', 'yearly archives date format', 'enterprise' ) ) . '</span>' );
+							printf( __( 'Year: %s', 'enterprise-lite' ), '<span class="archive-element">' . get_the_date( _x( 'Y', 'yearly archives date format', 'enterprise-lite' ) ) . '</span>' );
 
 						else :
-							_e( 'Archives', 'enterprise' );
+							_e( 'Archives', 'enterprise-lite' );
 
 						endif;
 					?>

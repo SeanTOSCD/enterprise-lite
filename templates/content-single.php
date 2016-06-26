@@ -27,7 +27,7 @@
 			the_content();
 			// break into pages
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'enterprise' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'enterprise-lite' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -37,10 +37,10 @@
 		<footer class="entry-footer">
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$category_list = get_the_category_list( __( ', ', 'enterprise' ) );
+				$category_list = get_the_category_list( __( ', ', 'enterprise-lite' ) );
 	
 				/* translators: used between list items, there is a space after the comma */
-				$tag_list = get_the_tag_list( '', __( ', ', 'enterprise' ) );
+				$tag_list = get_the_tag_list( '', __( ', ', 'enterprise-lite' ) );
 	
 				if ( ! enterprise_categorized_blog() ) {
 					// This blog only has 1 category so we just need to worry about tags in the meta text

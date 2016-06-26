@@ -19,7 +19,7 @@
 
 	<body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'enterprise' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'enterprise-lite' ); ?></a>
 		
 		<div class="header-wrap inner">
 			<header id="masthead" class="site-header site-element" role="banner">
@@ -42,7 +42,7 @@
 				
 				<?php if ( ! is_page_template( 'templates/landing-page.php' ) ) : ?>
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<span class="menu-toggle"><i class="fa fa-bars"></i> <?php _e( 'Menu', 'enterprise' ); ?></span>
+						<span class="menu-toggle"><i class="fa fa-bars"></i> <?php _e( 'Menu', 'enterprise-lite' ); ?></span>
 						<?php
 							wp_nav_menu( array(
 								'theme_location' => 'header',

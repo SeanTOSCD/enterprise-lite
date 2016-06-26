@@ -17,15 +17,15 @@ function enterprise_paging_nav() {
 	}
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'enterprise' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'enterprise-lite' ); ?></h1>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( '<i class="fa fa-caret-left"></i> ' . __( 'Older posts', 'enterprise' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( '<i class="fa fa-caret-left"></i> ' . __( 'Older posts', 'enterprise-lite' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'enterprise' ) . ' <i class="fa fa-caret-right"></i>' ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'enterprise-lite' ) . ' <i class="fa fa-caret-right"></i>' ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -49,11 +49,11 @@ function enterprise_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'enterprise' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'enterprise-lite' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous"><span class="post-nav-title">Previous Post:</span> %link</div>', _x( '%title', 'Previous post link', 'enterprise' ) );
-				next_post_link( '<div class="nav-next"><span class="post-nav-title">Next Post:</span> %link</div>', _x( '%title', 'Next post link',     'enterprise' ) );
+				previous_post_link( '<div class="nav-previous"><span class="post-nav-title">Previous Post:</span> %link</div>', _x( '%title', 'Previous post link', 'enterprise-lite' ) );
+				next_post_link( '<div class="nav-next"><span class="post-nav-title">Next Post:</span> %link</div>', _x( '%title', 'Next post link',     'enterprise-lite' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -98,7 +98,7 @@ function enterprise_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	printf( '<span class="posted-on"><i class="fa fa-calendar"></i> ' . __( '%1$s', 'enterprise' ) . '</span>',
+	printf( '<span class="posted-on"><i class="fa fa-calendar"></i> ' . __( '%1$s', 'enterprise-lite' ) . '</span>',
 		sprintf( '%2$s',
 			esc_url( get_permalink() ),
 			$time_string
@@ -127,9 +127,9 @@ function enterprise_comment_template( $comment, $args, $depth ) {
 			<div class="pingback">
 				<span>
 					<?php
-						echo __( 'Pingback: ', 'enterprise'),
+						echo __( 'Pingback: ', 'enterprise-lite'),
 						comment_author_link(),
-						edit_comment_link( __(' (Edit) ', 'enterprise') ); 
+						edit_comment_link( __(' (Edit) ', 'enterprise-lite') ); 
 					?>
 				</span>
 			<?php 
@@ -147,17 +147,17 @@ function enterprise_comment_template( $comment, $args, $depth ) {
 						</div>
 						<?php
 							if ( $comment->comment_approved == '0' ) : ?>
-								<em><?php _e( 'Your comment is awaiting moderation.', 'enterprise' ); ?></em><br /> 
+								<em><?php _e( 'Your comment is awaiting moderation.', 'enterprise-lite' ); ?></em><br /> 
 								<?php
 							endif;
 						?>
 						<div class="comment-meta commentmetadata">
-							<cite class="fn"><?php echo __( 'by ', 'enterprise' ) . get_comment_author_link(); ?></cite>
+							<cite class="fn"><?php echo __( 'by ', 'enterprise-lite' ) . get_comment_author_link(); ?></cite>
 							<span class="comment-date">
 								<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
 									<time pubdate datetime="<?php comment_time( 'c' ); ?>"><?php echo get_comment_date(); // translators: 1: date, 2: time ?></time>
 								</a>
-								<?php edit_comment_link( __( ' (Edit) ', 'enterprise' ) ); ?>
+								<?php edit_comment_link( __( ' (Edit) ', 'enterprise-lite' ) ); ?>
 							</span>
 						</div>
 					</footer>
@@ -168,7 +168,7 @@ function enterprise_comment_template( $comment, $args, $depth ) {
 						<?php 
 							comment_reply_link(
 								array_merge( $args, array(
-									'reply_text'	=> '<i class="fa fa-reply"></i> ' . __( 'Reply', 'enterprise' ),
+									'reply_text'	=> '<i class="fa fa-reply"></i> ' . __( 'Reply', 'enterprise-lite' ),
 									'depth'			=> $depth, 
 									'max_depth'		=> $args['max_depth'],
 								) )

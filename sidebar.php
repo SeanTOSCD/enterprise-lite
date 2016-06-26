@@ -9,7 +9,7 @@
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="archives" class="widget">
-				<span class="widget-title"><?php _e( 'Archives', 'enterprise' ); ?></span>
+				<span class="widget-title"><?php _e( 'Archives', 'enterprise-lite' ); ?></span>
 				<ul>
 					<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 				</ul>
@@ -20,7 +20,7 @@
 			</aside>
 
 			<aside id="meta" class="widget">
-				<span class="widget-title"><?php _e( 'Meta', 'enterprise' ); ?></span>
+				<span class="widget-title"><?php _e( 'Meta', 'enterprise-lite' ); ?></span>
 				<ul>
 					<?php wp_register(); ?>
 					<li><?php wp_loginout(); ?></li>
