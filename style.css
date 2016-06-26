@@ -9,7 +9,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: enterprise
 Domain Path: /languages/
-Tags: white, blue, gray, light, two-columns, right-sidebar, responsive-layout, featured-images, rtl-language-support, translation-ready
+Tags: two-columns, right-sidebar, featured-images, rtl-language-support, translation-ready
 
 Enterprise Lite WordPress Theme, Copyright (C) 2014 Sean Davis - SDavis Media LLC
 Enterprise Lite is distributed under the terms of the GNU GPL
@@ -17,8 +17,8 @@ Enterprise Lite is based on Underscores http://underscores.me/, (C) 2012-2014 Au
 
 Font Awesome http://fortawesome.github.io/Font-Awesome/license/
 Font Awesome Licenses:
-	SIL Open Font License http://scripts.sil.org/OFL 
-	MIT License http://opensource.org/licenses/mit-license.html 
+	SIL Open Font License http://scripts.sil.org/OFL
+	MIT License http://opensource.org/licenses/mit-license.html
 	CC BY 3.0 License – http://creativecommons.org/licenses/by/3.0/
 Copyright: Dave Gandy, http://fontawesome.io
 */
@@ -57,7 +57,7 @@ a,
 .site-main .paging-navigation a:hover {
 	color: #2e9feb;
 }
-@media screen and (max-width: 780px) {	
+@media screen and (max-width: 780px) {
 	.site-header .main-navigation ul ul .highlight a,
 	.site-header .main-navigation .menu > .highlight > a {
 		color: #2e9feb;
@@ -516,7 +516,7 @@ input[type="button"]:hover {
 	text-transform: uppercase;
 	padding: 10px 0 10px 10px;
 }
-.main-navigation .current-menu-item > a, 
+.main-navigation .current-menu-item > a,
 .main-navigation .current-menu-parent > a,
 .main-navigation a:hover,
 .main-navigation .menu > .highlight > a:hover {
@@ -897,13 +897,13 @@ input[type="button"]:hover {
 .widget_calendar table > tfoot td a:hover {
 	color: #999;
 }
-.widget_calendar table caption { 
+.widget_calendar table caption {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-weight: bold; 
+	font-weight: bold;
 }
 .widget_calendar table caption,
 .widget_calendar table th,
-.widget_calendar table td { 
+.widget_calendar table td {
 	text-align: center;
 }
 .widget_calendar table caption {
