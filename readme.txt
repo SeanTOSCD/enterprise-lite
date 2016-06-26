@@ -85,10 +85,12 @@ Copyright: Dave Gandy, http://fontawesome.io
 == Changelog ==
 
 = 1.0.3 =
+* changed theme textdomain from 'enterprise' to 'enterprise-lite'
+* updated language files
 * added theme support for title-tag
 * added sanitization for file uploaders in customizer
+* added sanitization for color pickers in customizer
 * removed outdated theme tags
-* fixed missing textdomain
 
 = 1.0.2 =
 * updated theme URI
